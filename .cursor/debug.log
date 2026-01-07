@@ -1,0 +1,2 @@
+{"location":"script.js:45","message":"Click event on link","data":{"hasPlaceholderAttr":false,"target":"A"},"timestamp":1767796237700,"sessionId":"debug-session","runId":"run1","hypothesisId":"A"}
+{"location":"script.js:45","message":"Click event on link","data":{"hasPlaceholderAttr":false,"target":"H3"},"timestamp":1767796257295,"sessionId":"debug-session","runId":"run1","hypothesisId":"A"}
