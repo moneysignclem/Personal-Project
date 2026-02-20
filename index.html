@@ -1,531 +1,491 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Clement Joubert | Software Engineer</title>
-    <meta
-      name="description"
-      content="Clement Joubert — Software Engineer. I specialize in unraveling complex problems through process intelligence, building robust solutions with a focus on SQL, automation, and AI. I thrive on collaboration and continuous learning to deliver impactful projects."
-    />
-    <meta name="theme-color" content="#070a12" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="Clement Joubert | Software Engineer" />
-    <meta
-      property="og:description"
-      content="I specialize in unraveling complex problems through process intelligence, building robust solutions with a focus on SQL, automation, and AI. I thrive on collaboration and continuous learning to deliver impactful projects."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="[[YOUR_SITE_URL]]" />
-    <meta property="og:image" content="[[YOUR_OG_IMAGE_URL_OR_PATH]]" />
-    <meta name="twitter:card" content="summary_large_image" />
+  <title>Clement Joubert | Software Engineer & Data Pipeline Specialist</title>
+  <meta name="description"
+    content="Clement Joubert — Software Engineer & Data Pipeline Specialist. I build end-to-end data products and full-stack applications, from robust database architectures to intuitive user interfaces." />
+  <meta name="theme-color" content="#070a12" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta property="og:title" content="Clement Joubert | Software Engineer & Data Pipeline Specialist" />
+  <meta property="og:description"
+    content="I specialize in building the full pipeline—from database architecture to functional, high-performance UIs. Focused on SQL, automation, and AI-driven insights." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://moneysignclem.github.io/" />
+  <meta property="og:image" content="./assets/Tech_picture.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <header class="site-header" data-js="header">
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="Go to top">
-          <span class="brand-mark" aria-hidden="true">CJ</span>
-          <span class="brand-name">Clement Joubert</span>
-        </a>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
 
-        <nav class="site-nav" aria-label="Primary navigation">
-          <ul class="nav-links" data-js="desktop-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        <div class="header-actions">
-          <button
-            class="theme-toggle"
-            type="button"
-            aria-label="Toggle theme"
-            data-js="theme-toggle"
-          >
-            <svg class="theme-icon theme-icon--sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="4"></circle>
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
-            </svg>
-            <svg class="theme-icon theme-icon--moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-          </button>
+  <header class="site-header" data-js="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark" aria-hidden="true">CJ</span>
+        <span class="brand-name">Clement Joubert</span>
+      </a>
 
-          <button
-            class="nav-toggle"
-            type="button"
-            aria-label="Open menu"
-            aria-controls="mobile-menu"
-            aria-expanded="false"
-            data-js="nav-toggle"
-          >
-            <span class="nav-toggle-lines" aria-hidden="true"></span>
-          </button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-links" data-js="desktop-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle theme" data-js="theme-toggle">
+          <svg class="theme-icon theme-icon--sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41">
+            </path>
+          </svg>
+          <svg class="theme-icon theme-icon--moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="mobile-menu"
+          aria-expanded="false" data-js="nav-toggle">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile navigation" hidden data-js="mobile-menu">
+      <div class="container mobile-nav-inner">
+        <ul class="mobile-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-cta">
+          <a class="btn btn-primary" href="#contact">Let’s talk</a>
+          <a class="btn btn-secondary" href="./assets/Clement CV 2025.pdf" target="_blank" rel="noopener"
+            download="Clement_Joubert_CV_2025.pdf">View CV</a>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile navigation" hidden data-js="mobile-menu">
-        <div class="container mobile-nav-inner">
-          <ul class="mobile-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="mobile-cta">
-            <a class="btn btn-primary" href="#contact">Let’s talk</a>
-            <a class="btn btn-secondary" href="./assets/Clement CV 2025.pdf" target="_blank" rel="noopener" download="Clement_Joubert_CV_2025.pdf"
-              >View CV</a
-            >
+  <main id="main">
+    <!-- HERO -->
+    <section id="top" class="section hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineer</p>
+          <h1 class="hero-title">
+            <span class="hero-title__display">Clement Joubert</span>
+          </h1>
+          <p class="hero-subtitle">
+            I build the full pipeline—from robust database architecture to functional, high-performance UIs.
+            <span class="muted">Currently focused on architecting automated business intelligence systems and refining
+              full-stack performance.</span>
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./assets/Clement CV 2025.pdf" target="_blank" rel="noopener"
+              download="Clement_Joubert_CV_2025.pdf">View CV</a>
+            <a class="btn btn-secondary" href="#contact">Contact</a>
+            <a class="btn btn-ghost" href="#projects">See projects</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="pill-row">
+              <span class="pill">1+ year experience</span>
+              <span class="pill">Python • Django • SQL</span>
+              <span class="pill">React • Node • AI</span>
+            </div>
+            <p class="hero-note muted">
+              Open to: <strong>Data Engineering and software engineering roles</strong> • Based in: <strong>South
+                Africa</strong>
+            </p>
+          </div>
+
+          <div class="social-row" aria-label="Social links">
+            <a class="icon-link icon-link--linkedin" href="https://www.linkedin.com/in/clement-joubert-7029a3244"
+              target="_blank" rel="noopener" aria-label="LinkedIn (opens in a new tab)">
+              <img src="./assets/Linkedin.png" alt="LinkedIn" width="26" height="26" decoding="async" />
+            </a>
+            <a class="icon-link icon-link--github" href="https://github.com/moneysignclem" target="_blank"
+              rel="noopener" aria-label="GitHub (opens in a new tab)">
+              <img src="./assets/Github.png" alt="GitHub" width="26" height="26" decoding="async" />
+            </a>
           </div>
         </div>
-      </nav>
-    </header>
 
-    <main id="main">
-      <!-- HERO -->
-      <section id="top" class="section hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <p class="eyebrow">Software Engineer</p>
-            <h1 class="hero-title">
-              <span class="hero-title__display">Clement Joubert</span>
-            </h1>
-            <p class="hero-subtitle">
-              I build reliable web apps with clean UX — from database to UI.
-              <span class="muted">Currently exploring: I’m focusing on process improvement and business intelligence with high-performing automation. I’m also maintaining proficiency across frontend and backend to stay versatile.</span>
+        <div class="hero-media">
+          <div class="avatar reveal">
+            <img src="./assets/Clement Linkedin Profile.jpeg" alt="Portrait of Clement Joubert" width="440" height="440"
+              fetchpriority="high" decoding="async" />
+          </div>
+
+          <article class="card card--note reveal">
+            <h2 class="card-title">Quick intro</h2>
+            <p>
+              I like turning messy requirements into calm, usable products — with readable code, honest timelines, and
+              great communication.
+              <span class="muted">My motto is " Struggling is part of the process. It's not about the destination, it's
+                about the journey."</span>
             </p>
-
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="./assets/Clement CV 2025.pdf" target="_blank" rel="noopener" download="Clement_Joubert_CV_2025.pdf">View CV</a>
-              <a class="btn btn-secondary" href="#contact">Contact</a>
-              <a class="btn btn-ghost" href="#projects">See projects</a>
-            </div>
-
-            <div class="hero-meta">
-              <div class="pill-row">
-                <span class="pill">1+ year experience</span>
-                <span class="pill">Python • Django • SQL</span>
-                <span class="pill">JavaScript • Node • Express</span>
-              </div>
-              <p class="hero-note muted">
-                Open to: <strong>Data Engineering and software engineering roles</strong> • Based in: <strong>South Africa</strong>
-              </p>
-            </div>
-
-            <div class="social-row" aria-label="Social links">
-              <a
-                class="icon-link icon-link--linkedin"
-                href="https://www.linkedin.com/in/clement-joubert-7029a3244"
-                target="_blank"
-                rel="noopener"
-                aria-label="LinkedIn (opens in a new tab)"
-              >
-                <img src="./assets/Linkedin.png" alt="LinkedIn" width="26" height="26" decoding="async" />
-              </a>
-              <a
-                class="icon-link icon-link--github"
-                href="https://github.com/moneysignclem"
-                target="_blank"
-                rel="noopener"
-                aria-label="GitHub (opens in a new tab)"
-              >
-                <img src="./assets/Github.png" alt="GitHub" width="26" height="26" decoding="async" />
-              </a>
-            </div>
-          </div>
-
-          <div class="hero-media">
-            <div class="avatar reveal">
-              <img
-                src="./assets/Clement Linkedin Profile.jpeg"
-                alt="Portrait of Clement Joubert"
-                width="440"
-                height="440"
-                fetchpriority="high"
-                decoding="async"
-              />
-            </div>
-
-            <article class="card card--note reveal">
-              <h2 class="card-title">Quick intro</h2>
-              <p>
-                I like turning messy requirements into calm, usable products — with readable code, honest timelines, and
-                great communication.
-                <span class="muted">My motto is " Struggling is part of the process. It's not about the destination, it's about the journey."</span>
-              </p>
-            </article>
-          </div>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ABOUT -->
-      <section id="about" class="section">
-        <div class="container">
-          <header class="section-header">
-            <p class="eyebrow">Get to know me</p>
-            <h2 class="section-title">About</h2>
-            <p class="section-lead">
-              A little context, a little personality, and a clear picture of how I work.
-              <span class="muted">Spending time in nature fuels my mind and sparks creativity. It helps me recharge and come back stronger</span>
-            </p>
-          </header>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">The Engineering Lens</p>
+          <h2 class="section-title">About</h2>
+          <p class="section-lead">
+            I thrive at the intersection of complex data problems and clean product delivery.
+            <span class="muted">Bridging the gap between raw data and actionable user experiences is where I do my best
+              work.</span>
+          </p>
+        </header>
 
-          <div class="about-grid">
-            <div class="about-media card reveal" aria-hidden="true">
-              <img
-                class="about-photo"
-                src="./assets/About Me.jpg"
-                alt=""
-                width="960"
-                height="1080"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
+        <div class="about-grid">
+          <div class="about-media card reveal" aria-hidden="true">
+            <img class="about-photo" src="./assets/About Me.jpg" alt="" width="960" height="1080" loading="lazy"
+              decoding="async" />
+          </div>
 
-            <div class="about-content">
-              <div class="grid-2">
-                <article class="card reveal">
-                  <h3 class="card-title">Experience</h3>
-                  <p class="muted">~1 year professional experience (plus personal projects).</p>
-                  <ul class="list">
-                    <li>Built and shipped web features end-to-end (frontend + backend).</li>
-                    <li>Comfortable with Python/Django, Node/Express, and PostgreSQL.</li>
-                    <li>Strong focus on readability, performance, and accessibility.</li>
-                  </ul>
-                </article>
-
-                <article class="card reveal">
-                  <h3 class="card-title">What I’m looking for</h3>
-                  <p>I’m looking to join a collaborative software engineering team where I can continue growing my technical skills, contribute meaningfully to real-world projects, and learn from experienced developers. I thrive in environments that value problem-solving, mentorship, and continuous improvement, and I’m motivated by building reliable, well-structured solutions that create real impact</p>
-                  <div class="pill-row">
-                    <span class="pill">Product-minded</span>
-                    <span class="pill">Ownership</span>
-                    <span class="pill">Growth</span>
-                  </div>
-                </article>
-              </div>
+          <div class="about-content">
+            <div class="grid-2">
+              <article class="card reveal">
+                <h3 class="card-title">Experience</h3>
+                <p class="muted">~1 year professional experience (plus personal projects).</p>
+                <ul class="list">
+                  <li>Engineered end-to-end data pipelines and web features.</li>
+                  <li>Proficient in architecting PostgreSQL schemas and Node/Django backends.</li>
+                  <li>Strong emphasis on data integrity, UX clarity, and performance.</li>
+                </ul>
+              </article>
 
               <article class="card reveal">
-                <h3 class="card-title">A little more human</h3>
-                <p>
-                  I find my greatest satisfaction in the deep dive—unraveling complex problems through process intelligence and translating that clarity into robust solutions. My passion lies in building functional applications and bringing order to challenging, messy datasets, which often starts with my absolute favorite tool: SQL. I thrive on collaboration, particularly when we're focused on leveraging automation and AI to simplify and streamline workflows. I truly value the continuous journey of technical mastery, and I stand by the belief that having a sharp appetite to learn now is the key to delivering impactful projects.
+                <h3 class="card-title">Core Focus</h3>
+                <p>I specialize in building reliable, scalable systems that bridge the gap between complex datasets and
+                  intuitive users. My objective is to deliver high-performance solutions that maintain data integrity
+                  while providing meaningful business value.
                 </p>
-                <div class="grid-2 about-mini">
-                  <div>
-                    <p class="muted"><strong>Currently learning:</strong> Angular and Node</p>
-                    <p class="muted"><strong>Strength:</strong> Persistence and a deep willingness to learn; I have an appetite to learn now technically.</p>
-                  </div>
-                  <div>
-                    <p class="muted"><strong>Favourite projects:</strong> Creating a campaign for the mayor of Cape Town with a Django project as my capstone.</p>
-                    <p class="muted"><strong>Fun fact:</strong> I love to knit! It's my absolute reliever when working, helping me break away and reset my focus.</p>
-                  </div>
+                <div class="pill-row">
+                  <span class="pill">Full-Pipeline Engineering</span>
+                  <span class="pill">Systems Architecture</span>
+                  <span class="pill">Business Intelligence</span>
                 </div>
               </article>
             </div>
+
+            <article class="card reveal">
+              <h3 class="card-title">Values & Philosophy</h3>
+              <p>
+                I find my greatest satisfaction in the "deep dive"—unraveling complex problems through process
+                intelligence and translating that clarity into robust solutions. My passion lies in building functional
+                applications and bringing order to challenging, messy datasets. I thrive on collaboration, particularly
+                when focused on leveraging automation
+                and AI to simplify and streamline workflows. I stand by the belief that a proactive appetite for
+                technical mastery is the key to delivering impactful projects.
+              </p>
+              <div class="grid-2 about-mini">
+                <div>
+                  <p class="muted"><strong>Specialization:</strong> Full-Stack Pipelines & AI Orchestration</p>
+                  <p class="muted"><strong>Key Strength:</strong> Technical persistence; I excel at resolving edge cases
+                    and optimizing complex logic.</p>
+                </div>
+                <div>
+                  <p class="muted"><strong>Past Highlights:</strong> Developing large-scale web platforms and automating
+                    complex ETL workflows.</p>
+                  <p class="muted"><strong>Beyond the Code:</strong> I love to knit! It’s my ultimate tool for resetting
+                    focus and tackling problems with fresh perspective.</p>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- SKILLS -->
-      <section id="experience" class="section">
-        <div class="container">
-          <header class="section-header">
-            <p class="eyebrow">What I use</p>
-            <h2 class="section-title">Skills & tools</h2>
-            <p class="section-lead">
-              A practical stack for building modern web apps.
-              <span class="muted">[[Add certifications or special focus areas if relevant.]]</span>
-            </p>
-          </header>
+    <!-- SKILLS -->
+    <section id="experience" class="section">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Technical Stack</p>
+          <h2 class="section-title">Skills & tools</h2>
+          <p class="section-lead">
+            A specialized toolkit for modern web applications and data pipeline automation.
+          </p>
+        </header>
 
-          <div class="grid-2">
-            <article class="card reveal">
-              <h3 class="card-title">Frontend</h3>
-              <ul class="skill-list">
-                <li><span class="skill">HTML</span><span class="level">Comfortable</span></li>
-                <li><span class="skill">CSS</span><span class="level">Comfortable</span></li>
-                <li><span class="skill">JavaScript</span><span class="level">Comfortable</span></li>
-                <li><span class="skill">Angular</span><span class="level">Basic</span></li>
-              </ul>
-            </article>
-
-            <article class="card reveal">
-              <h3 class="card-title">Backend & data</h3>
-              <ul class="skill-list">
-                <li><span class="skill">Python</span><span class="level">Intermediate</span></li>
-                <li><span class="skill">Django</span><span class="level">Intermediate</span></li>
-                <li><span class="skill">Node.js</span><span class="level">Comfortable</span></li>
-                <li><span class="skill">Express</span><span class="level">Basic</span></li>
-                <li><span class="skill">PostgreSQL</span><span class="level">Comfortable</span></li>
-                <li><span class="skill">Git</span><span class="level">Comfortable</span></li>
-              </ul>
-            </article>
-          </div>
+        <div class="grid-2">
+          <article class="card reveal">
+            <h3 class="card-title">Frontend</h3>
+            <ul class="skill-list">
+              <li><span class="skill">React</span><span class="level">Comfortable</span></li>
+              <li><span class="skill">TypeScript</span><span class="level">Comfortable</span></li>
+              <li><span class="skill">JavaScript</span><span class="level">Comfortable</span></li>
+              <li><span class="skill">Angular</span><span class="level">Basic</span></li>
+              <li><span class="skill">HTML/CSS</span><span class="level">Comfortable</span></li>
+            </ul>
+          </article>
 
           <article class="card reveal">
-            <h3 class="card-title">How I work</h3>
-            <ul class="list">
-              <li>Communicate early, document decisions, and ship iteratively.</li>
-              <li>Prefer simple solutions first, then optimize with data.</li>
-              <li>Care about UX details: responsiveness, accessibility, and clarity.</li>
+            <h3 class="card-title">Backend & data</h3>
+            <ul class="skill-list">
+              <li><span class="skill">Node.js / Express</span><span class="level">Comfortable</span></li>
+              <li><span class="skill">Python / Django</span><span class="level">Intermediate</span></li>
+              <li><span class="skill">SQL / PostgreSQL</span><span class="level">Comfortable</span></li>
+              <li><span class="skill">AI Integration (Gemini)</span><span class="level">Comfortable</span></li>
+              <li><span class="skill">Git / Docker</span><span class="level">Comfortable</span></li>
             </ul>
           </article>
         </div>
-      </section>
 
-      <!-- PROJECTS -->
-      <section id="projects" class="section">
-        <div class="container">
-          <header class="section-header">
-            <p class="eyebrow">Selected work</p>
-            <h2 class="section-title">Projects</h2>
-            <p class="section-lead">
-              A few things I’ve built recently. Each project includes context, tech, and outcomes.
-            </p>
-          </header>
+        <article class="card reveal">
+          <h3 class="card-title">Professional Philosophy</h3>
+          <ul class="list">
+            <li><strong>Data-First:</strong> Build on robust architectures that ensure integrity and performance.</li>
+            <li><strong>Simplicity:</strong> Solve complex problems with the most direct, maintainable solutions.</li>
+            <li><strong>Ownership:</strong> Deliver full-cycle engineering, from initial script to polished production
+              UI.</li>
+          </ul>
+        </article>
 
-          <div class="projects-grid">
-            <article class="card project-card reveal">
-              <div class="project-media">
-                <img
-                  src="./assets/SQL Project.jpg"
-                  alt="Screenshot for SQL Project"
-                  width="1200"
-                  height="750"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="project-body">
-                <h3 class="card-title">SQL Project</h3>
-                <p class="muted">
-                  "SQL Project" is a comprehensive SQL project that demonstrates my ability to write complex SQL queries, optimize database performance, and extract meaningful insights from data. This project showcases my proficiency in SQL, data analysis, and problem-solving skills, making it a valuable addition to my portfolio.
-                </p>
-                <div class="tag-row" aria-label="Tech stack">
-                  <span class="tag">SQL</span>
-                  <span class="tag">PostgreSQL</span>
-                  <span class="tag">Data</span>
-                </div>
-                <ul class="list compact">
-                  <li><strong>Role:</strong> This project showcases a collection of SQL queries demonstrating my understanding of core database concepts such as filtering, grouping, joins, and aggregation. It’s interesting because it highlights how raw data can be queried and structured to extract meaningful insights.</li>
-                  <li><strong>Outcome:</strong>Strengthened my understanding of relational databases and SQL query optimization</li>
-                </ul>
-                <div class="project-actions">
-                  <a
-                    class="btn btn-secondary"
-                    href="https://github.com/moneysignclem/sql_project"
-                    target="_blank"
-                    rel="noopener"
-                    >GitHub</a
-                  >
-                  <a
-                    class="btn btn-ghost"
-                    href="#"
-                    data-placeholder-href="[[LIVE_DEMO_URL]]"
-                    aria-disabled="true"
-                    title="Add live demo URL"
-                    >Live demo</a
-                  >
-                </div>
-              </div>
-            </article>
+        <header class="section-header" style="margin-top: 48px;">
+          <p class="eyebrow">Verified Expertise</p>
+          <h3 class="card-title">Certifications</h3>
+        </header>
 
-            <article class="card project-card reveal">
-              <div class="project-media">
-                <img
-                  src="./assets/Tech_picture.png"
-                  alt="SupportFlow analytics dashboard"
-                  width="1200"
-                  height="750"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="project-body">
-                <h3 class="card-title">SupportFlow – Internal Support Ticket & Analytics Platform</h3>
-                <p class="muted">
-                  SupportFlow is a full-stack reference app for managing internal support tickets with role-based access and analytics.
-                </p>
-                <div class="tag-row" aria-label="Tech stack">
-                  <span class="tag">React</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Vite</span>
-                  <span class="tag">TailwindCSS</span>
-                  <span class="tag">Recharts</span>
-                  <span class="tag">FastAPI</span>
-                  <span class="tag">SQLAlchemy</span>
-                  <span class="tag">Alembic</span>
-                  <span class="tag">JWT</span>
-                  <span class="tag">PostgreSQL</span>
-                  <span class="tag">Docker</span>
-                </div>
-                <ul class="list compact">
-                  <li><strong>Frontend:</strong> React (Vite) + TypeScript + TailwindCSS + Recharts for data visualization</li>
-                  <li><strong>Backend:</strong> FastAPI with SQLAlchemy ORM, Alembic migrations, and JWT authentication</li>
-                  <li><strong>Database:</strong> PostgreSQL (with SQLite fallback for local development)</li>
-                  <li><strong>DevOps:</strong> Docker + docker-compose for containerized deployment</li>
-                  <li><strong>Architecture:</strong> Separated frontend (Vite SPA with auth, user/admin dashboards, analytics) and backend (FastAPI service with JWT auth, tickets CRUD, analytics + CSV export, Alembic migrations)</li>
-                </ul>
-                <div class="project-actions">
-                  <a
-                    class="btn btn-secondary"
-                    href="https://github.com/moneysignclem/Support_Ticket_Project"
-                    target="_blank"
-                    rel="noopener"
-                    title="View SupportFlow project on GitHub"
-                    >GitHub</a
-                  >
-                  <a
-                    class="btn btn-ghost"
-                    href="#"
-                    data-placeholder-href="[[LIVE_DEMO_URL]]"
-                    aria-disabled="true"
-                    title="Add live demo URL"
-                    >Live demo</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <article class="card project-card reveal">
-              <div class="project-media">
-                <img
-                  src="./assets/project 2.png"
-                  alt="Sales ETL pipeline dashboards"
-                  width="1200"
-                  height="750"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="project-body">
-                <h3 class="card-title">Sales ETL Pipeline</h3>
-                <p class="muted">Sales ETL Pipeline ingests raw sales data, transforms it, and loads curated datasets for analytics dashboards and reporting.</p>
-                <div class="tag-row" aria-label="Tech stack">
-                  <span class="tag">Python</span>
-                  <span class="tag">SQL</span>
-                  <span class="tag">ETL</span>
-                  <span class="tag">Docker</span>
-                  <span class="tag">Analytics</span>
-                </div>
-                <ul class="list compact">
-                  <li><strong>Role:</strong> Designed and built the ETL workflow end-to-end (extract, transform, load), containerized for reproducible runs.</li>
-                  <li><strong>Outcome:</strong> Delivered clean, analytics-ready tables for dashboards and reporting; reduced manual prep time.</li>
-                </ul>
-                <div class="project-actions">
-                  <a
-                    class="btn btn-secondary"
-                    href="https://github.com/moneysignclem/Sales_Data_Pipelines"
-                    target="_blank"
-                    rel="noopener"
-                    title="View Sales ETL Pipeline project on GitHub"
-                    >GitHub</a
-                  >
-                  <a
-                    class="btn btn-ghost"
-                    href="https://mrsbwdrzme.skywork.website"
-                    target="_blank"
-                    rel="noopener"
-                    title="View Sales ETL Pipeline live demo"
-                    >Live demo</a
-                  >
-                </div>
-              </div>
-            </article>
+        <div class="grid-3">
+          <div class="card cert-card reveal">
+            <img src="./assets/OCI25DOPOCP.png" alt="OCI DevOps Professional" class="cert-badge" loading="lazy" />
+            <p class="cert-name">Oracle Certified Professional<br><span class="muted">OCI DevOps</span></p>
+          </div>
+          <div class="card cert-card reveal">
+            <img src="./assets/OCI25GAIOCP.png" alt="OCI Generative AI Professional" class="cert-badge"
+              loading="lazy" />
+            <p class="cert-name">Oracle Certified Professional<br><span class="muted">OCI Generative AI</span></p>
+          </div>
+          <div class="card cert-card reveal">
+            <img src="./assets/OCI25AICFAV1.png" alt="OCI AI Foundations" class="cert-badge" loading="lazy" />
+            <p class="cert-name">Oracle Certified Associate<br><span class="muted">OCI AI Foundations</span></p>
           </div>
         </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact" class="section section--contact">
-        <div class="container">
-          <header class="section-header">
-            <p class="eyebrow">Let’s build</p>
-            <h2 class="section-title">Contact</h2>
-            <p class="section-lead">
-              If you want to collaborate, hire, or just chat about ideas, I’m easy to reach.
-            </p>
-          </header>
-
-          <div class="grid-2 contact-grid">
-            <article class="card reveal">
-              <h3 class="card-title">Message me</h3>
-              <p class="muted">Best channel is email. I usually reply within 2-3 days.</p>
-
-              <div class="contact-links">
-                <a class="contact-link" href="mailto:joubertclement104@gmail.com">
-                  <img src="./assets/email icon.png" alt="" width="22" height="22" loading="lazy" decoding="async" />
-                  <span>joubertclement104@gmail.com</span>
-                </a>
-                <a
-                  class="contact-link contact-link--linkedin"
-                  href="https://www.linkedin.com/in/clement-joubert-7029a3244"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img src="./assets/Linkedin.png" alt="LinkedIn" width="24" height="24" loading="lazy" decoding="async" />
-                  <span>LinkedIn</span>
-                </a>
-                <a class="contact-link contact-link--github" href="https://github.com/moneysignclem" target="_blank" rel="noopener">
-                  <img src="./assets/Github.png" alt="GitHub" width="24" height="24" loading="lazy" decoding="async" />
-                  <span>GitHub</span>
-                </a>
-                <a
-                  class="contact-link contact-link--cv"
-                  href="./assets/Clement CV 2025.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  download="Clement_Joubert_CV_2025.pdf"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                  </svg>
-                  <span>Download CV</span>
-                </a>
-              </div>
-            </article>
-
-            <article class="card reveal">
-              <h3 class="card-title">What I’m open to</h3>
-              <ul class="list">
-                <li>Full-time roles (junior → mid) • internships • freelance</li>
-                <li>Backend / full-stack (Python/Django, Node/Express, SQL)</li>
-                <li>Teams that value quality, mentoring, and shipping</li>
-              </ul>
-              <p class="muted">If you’re unsure, send a message — I’m happy to chat.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <a class="footer-top" href="#top">Back to top</a>
-        <p class="muted">© <span id="year"></span> Clement Joubert. All rights reserved.</p>
       </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-lead">
+            A few things I’ve built recently. Each project includes context, tech, and outcomes.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          <article class="card project-card reveal">
+            <div class="project-media">
+              <img src="./assets/SQL Project.jpg" alt="SneakerData Analytics Dashboard" width="1200" height="750"
+                loading="lazy" decoding="async" />
+            </div>
+            <div class="project-body">
+              <h3 class="card-title">SneakerData | AI-Powered SQL Analytics</h3>
+              <p class="muted">
+                A sophisticated analytics platform that transforms sneaker market data into actionable intelligence.
+                Integrates Gemini AI to allow natural language querying, Bridging the gap between raw data and business
+                insights.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span class="tag">SQL</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Gemini AI</span>
+                <span class="tag">Tailwind CSS</span>
+              </div>
+              <ul class="list compact">
+                <li><strong>Core Functionality:</strong> AI-driven query engine that translates natural language into
+                  optimized SQL, paired with dynamic visualizations for market trend analysis.</li>
+                <li><strong>Architecture:</strong> Built with a scalable Node.js backend and a responsive React
+                  frontend, ensuring high performance and a premium user experience.</li>
+                <li><strong>Outcome:</strong> Empowered users to extract deep insights from complex datasets without
+                  needing technical SQL knowledge, streamlining the data-to-decision workflow.</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-secondary" href="https://github.com/moneysignclem/SneakerData" target="_blank"
+                  rel="noopener">GitHub</a>
+                <a class="btn btn-ghost" href="https://modern-ai-innovation.vercel.app/" target="_blank"
+                  rel="noopener">Live demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-media">
+              <img src="./assets/Tech_picture.png" alt="RetailAI Intelligence Dashboard Scraper" width="1200"
+                height="750" loading="lazy" decoding="async" />
+            </div>
+            <div class="project-body">
+              <h3 class="card-title">RetailAI | Intelligent Retail Dashboard & Scraper</h3>
+              <p class="muted">
+                An AI-powered retail intelligence dashboard that scrapes and analyzes product data across major
+                retailers. Designed to provide real-time insights for product support and competitive analysis.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span class="tag">Python</span>
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">TailwindCSS</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Gemini AI</span>
+                <span class="tag">Playwright</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
+              </div>
+              <ul class="list compact">
+                <li><strong>Core Foundations:</strong> Automated web scraping engine using Playwright, paired with
+                  Gemini AI for intelligent data parsing and categorization.</li>
+                <li><strong>Architecture:</strong> FastAPI backend for efficient data processing and a React-based
+                  dashboard for real-time visualization and reporting.</li>
+                <li><strong>Outcome:</strong> Streamlined retail data collection, reducing manual tracking time and
+                  enabling data-driven support decisions.</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-secondary" href="https://github.com/moneysignclem/retail-ai-scraper" target="_blank"
+                  rel="noopener" title="View RetailAI project on GitHub">GitHub</a>
+                <a class="btn btn-ghost" href="https://retailai-intelligence-dashboard-227682587408.us-west1.run.app/"
+                  target="_blank" rel="noopener" title="View RetailAI live demo">Live demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-media">
+              <img src="./assets/project 2.png" alt="DataStream ETL pipeline dashboards" width="1200" height="750"
+                loading="lazy" decoding="async" />
+            </div>
+            <div class="project-body">
+              <h3 class="card-title">DataStream | Automated Sales ETL Pipeline</h3>
+              <p class="muted">
+                End-to-end ETL pipeline built with Python, SQL, ETL, Docker, and Analytics. It automates sales data
+                ingestion, transformation, and delivery into analytics-ready tables, enabling direct business dashboard
+                integration and eliminating manual data preparation.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">ETL</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Analytics</span>
+              </div>
+              <ul class="list compact">
+                <li><strong>Role:</strong> Designed and built the ETL workflow end-to-end (extract, transform, load),
+                  containerized for reproducible runs.</li>
+                <li><strong>Outcome:</strong> Delivered clean, analytics-ready tables for dashboards and reporting;
+                  reduced manual prep time.</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-secondary" href="https://github.com/moneysignclem/datastream-app" target="_blank"
+                  rel="noopener" title="View DataStream project on GitHub">GitHub</a>
+                <a class="btn btn-ghost" href="https://data-stream-flpk.onrender.com/" target="_blank" rel="noopener"
+                  title="View DataStream live demo">Live demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--contact">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Let’s build</p>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-lead">
+            If you want to collaborate, hire, or just chat about ideas, I’m easy to reach.
+          </p>
+        </header>
+
+        <div class="grid-2 contact-grid">
+          <article class="card reveal">
+            <h3 class="card-title">Message me</h3>
+            <p class="muted">Best channel is email. I usually reply within 2-3 days.</p>
+
+            <div class="contact-links">
+              <a class="contact-link" href="mailto:joubertclement104@gmail.com">
+                <img src="./assets/email icon.png" alt="" width="22" height="22" loading="lazy" decoding="async" />
+                <span>joubertclement104@gmail.com</span>
+              </a>
+              <a class="contact-link contact-link--linkedin"
+                href="https://www.linkedin.com/in/clement-joubert-7029a3244" target="_blank" rel="noopener">
+                <img src="./assets/Linkedin.png" alt="LinkedIn" width="24" height="24" loading="lazy"
+                  decoding="async" />
+                <span>LinkedIn</span>
+              </a>
+              <a class="contact-link contact-link--github" href="https://github.com/moneysignclem" target="_blank"
+                rel="noopener">
+                <img src="./assets/Github.png" alt="GitHub" width="24" height="24" loading="lazy" decoding="async" />
+                <span>GitHub</span>
+              </a>
+              <a class="contact-link contact-link--cv" href="./assets/Clement CV 2025.pdf" target="_blank"
+                rel="noopener" download="Clement_Joubert_CV_2025.pdf">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download CV</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card-title">Strategic Alignment</h3>
+            <ul class="list">
+              <li>Full-time engineering roles (Software • Data • Full-Stack)</li>
+              <li>Automation & Business Intelligence optimization</li>
+              <li>High-growth teams valued for technical ownership and delivery</li>
+            </ul>
+            <p class="muted">Always open to discussing complex systems or innovative data products.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-top" href="#top">Back to top</a>
+      <p class="muted">© <span id="year"></span> Clement Joubert. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
-
